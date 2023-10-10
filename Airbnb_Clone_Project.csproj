@@ -135,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\CSS\Base_css\base.css" />
+    <Content Include="Assets\CSS\FORM\VADITION.css" />
     <Content Include="Assets\CSS\Switch\Switch_menu.css" />
     <Content Include="Assets\CSS\_LayoutMater_css\Modal_user.css" />
     <Content Include="Scripts\scripts\Modal_user.js" />
