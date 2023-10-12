@@ -4,15 +4,15 @@
     }
 }
 /* NAV LOGIN VADITION  */
-@media (min-width:1024px) {
-    .user-header__form--active-Parent
-    {
-        display:none;
+@media (min-width: 740px) {
+    .user-header__form--active-Parent {
+        display: none;
     }
+
     .user-header__form--active {
         position: absolute;
         top: 140%;
-        right:10px;
+        right: 10px;
         height: var(--height-nav__user);
         background-color: var(--white-color);
         border-radius: 10px;
@@ -20,7 +20,7 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     }
     /*top: 120%;*/
-  
+
     .pp {
         position: relative;
     }
@@ -28,11 +28,11 @@
     .user-header__form-box {
         width: 240px;
         height: 200px;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
     .form-user--overplay {
         position: fixed;
         top: 0;
@@ -41,18 +41,18 @@
         bottom: 0;
     }
 
-        .user-header__form-box > button {
-            display: block;
-            border: none;
-            width: 100%;
-            height: 48px;
-            background-color: var(--white-color);
-            text-align: left;
-            font-size: 1.5rem;
-            font-weight: 500;
-            padding-left: 24px;
-            cursor: pointer;
-        }
+    .user-header__form-box > button {
+        display: block;
+        border: none;
+        width: 100%;
+        height: 48px;
+        background-color: var(--white-color);
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-left: 24px;
+        cursor: pointer;
+    }
 
     hr {
         width: 100%;
