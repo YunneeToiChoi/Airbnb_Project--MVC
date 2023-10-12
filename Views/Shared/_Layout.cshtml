@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="~/Assets/CSS/FORM/VADITION.css" />
     <link rel="stylesheet" href="~/Assets/CSS/_LayoutMater_css/Modal_user.css" />
     <link rel="stylesheet" href="~/Assets/CSS/Base_css/base.css" />
+    <link rel="stylesheet" href="~/Assets/CSS/Bear_css/bear.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,18 +48,18 @@
                                 <li class="navbar__item-user"><span class="navbar__link"><i class="navbar__icon navbar__icon--user fa-solid fa-user"></i></span></li>
                             </ul>
                         </div>
-                            <div class="user-header__form--active-Parent">
-                                <div class="form-user--overplay"></div>
-                                <div class="user-header__form--active">
-                                    <div class="user-header__form-box">
-                                        <button class="user-header__form--navRegister">Sign In</button>
-                                        <button class="user-header__form--navLogin">Log in</button>
-                                        <hr style="border: 0.1px solid #cfcfcf " />
-                                        <button class="user-header__form--support">Airbnb your home</button>
-                                        <button class="user-header__form--support">Help Center</button>
-                                    </div>
+                        <div class="user-header__form--active-Parent">
+                            <div class="form-user--overplay"></div>
+                            <div class="user-header__form--active">
+                                <div class="user-header__form-box">
+                                    <button class="user-header__form--navRegister">Sign In</button>
+                                    <button class="user-header__form--navLogin">Log in</button>
+                                    <hr style="border: 0.1px solid #cfcfcf " />
+                                    <button class="user-header__form--support">Airbnb your home</button>
+                                    <button class="user-header__form--support">Help Center</button>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -167,7 +168,8 @@
         </div>
         @RenderBody(); <!-- co the Phong du 1 div -->
     </div>
-    
+    <div class="ovl"></div>
+    <div class="loader"></div>
     <script src="~/Scripts/scripts/Modal_user.js"></script>
 </body>
 </html>
