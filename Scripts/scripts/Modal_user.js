@@ -1,16 +1,16 @@
 ﻿var user = document.querySelector('.user-navbar__box')
-var userParent = document.querySelector('.user-header__form--active')
-var menu = document.querySelector('.menu')
-
+var userParent = document.querySelector('.user-header__form--active-Parent')
+var overplayUser = document.querySelector('.form-user--overplay')
 function xx() {
     userParent.classList.add('active')
 }
-
-user.addEventListener('click', xx)
 function remove() {
     userParent.classList.remove('active')
 }
-menu.addEventListener('click', remove);
+user.addEventListener('click', xx)
+overplayUser.addEventListener('click', remove);
+
+
 
 // END EVENT CLICK 
 
@@ -22,14 +22,20 @@ menu.addEventListener('click', remove);
 const register = userParent.querySelector('.user-header__form--navRegister')
 
 ////////////////////////////////// Mo form
-const overPlayForm = document.querySelector('.form-vadition--overplay')
+const ModalForm = document.querySelector('.form-vadition--modal')
+const closeForm =ModalForm.querySelector('.vadition__header-icon')
+const overPlayForm = ModalForm.querySelector('.form-vadition--overplay')
+
 
 // register 
 const registerNav = document.querySelector('.user-header__form--navRegister')
 
-registerNav.addEventListener('click', () => { overPlayForm.classList.add('active') })
+registerNav.addEventListener('click', () => { ModalForm.classList.add('active') })
 
 // close Form
-const closeForm = overPlayForm.querySelector('.vadition__header-icon')
-//overPlayForm.addEventListener('click', () => { overPlayForm.classList.remove('active') })
-closeForm.addEventListener('click', () => { overPlayForm.classList.remove('active') })
+
+overPlayForm.addEventListener('click', () => { ModalForm.classList.remove('active') })
+
+
+closeForm.addEventListener('click', () => { ModalForm.classList.remove('active') })
+
