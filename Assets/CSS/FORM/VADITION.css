@@ -1,4 +1,5 @@
-﻿.form-vadition--modal
+﻿
+.form-vadition--modal
 {
     display: none;
     z-index: 10;
@@ -22,7 +23,7 @@
     animation: fadeIn linear .2s;
 }
 
-.form-vadition__container 
+.form-vadition__container--register
 {
     position: absolute;
     top: 0;
@@ -38,6 +39,7 @@
     z-index: 10;
     transform-origin: bottom bottom;
     animation: fadeInUp linear .4s;
+    display : none !important;
 }
 
 .vadition__header-icon 
@@ -155,4 +157,23 @@
     {
         margin-left: 24px;
     }
-    
+   /* END REGISTER */
+
+/* BEGIN LOGIN */
+.form-vadition__container--login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--form-width);
+    height: 550px;
+    background-color: var(--white-color);
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 10;
+    transform-origin: bottom bottom;
+    animation: fadeInUp linear .4s;
+    display : none;
+}
