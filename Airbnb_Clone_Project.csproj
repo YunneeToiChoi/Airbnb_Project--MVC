@@ -129,7 +129,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -172,8 +174,10 @@
     <Content Include="Assets\CSS\Base_css\base.css" />
     <Content Include="Assets\CSS\Bear_css\bear.css" />
     <Content Include="Assets\CSS\FORM\VADITION.css" />
+    <Content Include="Assets\CSS\Product_css\Product.css" />
     <Content Include="Assets\CSS\Switch\Switch_menu.css" />
     <Content Include="Assets\CSS\_LayoutMater_css\Modal_user.css" />
+    <Content Include="Assets\_image\products_image\CRS__PINGAO.png" />
     <Content Include="Models\DBSportStoreEntites.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBSportStoreEntites.edmx</DependentUpon>
@@ -239,10 +243,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminLayoutPage.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\_image\Footer_image\" />
+    <Folder Include="Views\Category\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
