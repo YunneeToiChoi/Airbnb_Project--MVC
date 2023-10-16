@@ -13,5 +13,9 @@ namespace Airbnb_Clone_Project.Controllers
         {
             return View();
         }
+        public ActionResult Create()
+        {
+
+        }
     }
 }
