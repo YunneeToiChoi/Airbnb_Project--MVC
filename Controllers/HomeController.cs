@@ -26,5 +26,17 @@ namespace Airbnb_Clone_Project.Controllers
 
             return View();
         }
+        public ActionResult Menu()
+        {
+            return View();
+        }
+        public ActionResult Product()
+        {
+            return View();
+        }
+        public ActionResult Product1()
+        {
+            return View();
+        }
     }
 }

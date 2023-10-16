@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="~/Assets/CSS/_LayoutMater_css/Modal_user.css" />
     <link rel="stylesheet" href="~/Assets/CSS/Base_css/base.css" />
     <link rel="stylesheet" href="~/Assets/CSS/Bear_css/bear.css" />
+    <link rel="stylesheet" href="~/Assets/CSS/loader_css/loader.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,52 +67,7 @@
         </div>
         <!-- End Navbar -->
         <!-- Menu -->
-        <div class="menu">
-            <div class="grid wide">
-                <div class="menu__container row">
-                    <div class="menu-left col l-9 m-12 c-12">
-                        <div class="menu__box  <!--menu__box--chosen--">
-                            <img src="~/Assets/_image/Menu_image/menu_1.jpg" style="width:26px" alt="" class="menu__img">
-                            <h4 class="menu__header">Phòng</h4>
-                            <div class="menu__box-border-bt"></div>
-                        </div>
-                        <div class="menu__box ">
-                            <img src="~/Assets/_image/Menu_image/menu_2.jpg" style="width:26px" alt="" class="menu__img">
-                            <h4 class="menu__header">Khung cảnh tuyệt vời</h4>
-                            <div class="menu__box-border-bt"></div>
-                        </div>
-                        <div class="menu__box ">
-                            <img src="~/Assets/_image/Menu_image/menu_3.jpg" style="width:26px" alt="" class="menu__img">
-                            <h4 class="menu__header">Nhà nhỏ</h4>
-                            <div class="menu__box-border-bt"></div>
-                        </div>
-                        <div class="menu__box ">
-                            <img src="~/Assets/_image/Menu_image/menu_4.jpg" style="width:26px" alt="" class="menu__img">
-                            <h4 class="menu__header">Chơi golf</h4>
-                            <div class="menu__box-border-bt"></div>
-                        </div>
-                        <div class="menu__box ">
-                            <img src="~/Assets/_image/Menu_image/menu_5.jpg" style="width:26px" alt="" class="menu__img">
-                            <h4 class="menu__header">Nhà dưới lòng đất</h4>
-                            <div class="menu__box-border-bt"></div>
-                        </div>
-                        <div class="menu__box ">
-                            <img src="~/Assets/_image/Menu_image/menu_6.jpg" style="width:26px" alt="" class="menu__img">
-                            <h4 class="menu__header">Dammuso</h4>
-                            <div class="menu__box-border-bt"></div>
-                        </div>
-                    </div>
-                    <div class="menu-right col l-3 m-0 c-0">
-                        <div class="menu-right__box navbar__box">
-                            <p class="menu__content">Hiển thị tổng trước thuế</p>
-                            <input type="checkbox" id="checkboxInput">
-                            <label for="checkboxInput" class="toggleSwitch">
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @RenderBody();
         <!--  Mot tao 1 layout rieng -->
 
         <div class="form-vadition--modal">
@@ -125,7 +81,7 @@
                 </div>
                 <hr />
                 @*END HEADER
-            BEGIN BOX*@
+                BEGIN BOX*@
                 <div class="vadition__box pd24">
                     <h1 style="margin-bottom: 20px;" class="vadition__box-tittle">
                         Welcome to Airbnb
@@ -177,7 +133,7 @@
                 </div>
                 <hr />
                 @*END HEADER
-            BEGIN BOX*@
+                BEGIN BOX*@
                 <div class="vadition__box pd24">
                     <h1 style="margin-bottom: 20px;" class="vadition__box-tittle">
                         Welcome to Airbnb
@@ -224,10 +180,6 @@
                 END BOx
             </div>
         </div>
-        @RenderBody(); <!-- co the Phong du 1 div -->
     </div>
-    <div class="ovl"></div>
-    <div class="loader"></div>
-    <script src="~/Scripts/scripts/Modal_user.js"></script>
 </body>
 </html>

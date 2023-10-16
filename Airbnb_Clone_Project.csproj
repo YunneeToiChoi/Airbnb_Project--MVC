@@ -137,6 +137,7 @@
     <Content Include="Assets\CSS\Base_css\base.css" />
     <Content Include="Assets\CSS\Bear_css\bear.css" />
     <Content Include="Assets\CSS\FORM\VADITION.css" />
+    <Content Include="Assets\CSS\loader_css\loader.css" />
     <Content Include="Assets\CSS\Switch\Switch_menu.css" />
     <Content Include="Assets\CSS\_LayoutMater_css\Modal_user.css" />
     <Content Include="Scripts\scripts\Modal_user.js" />
@@ -187,6 +188,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Home\Product1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
