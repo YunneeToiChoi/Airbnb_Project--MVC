@@ -112,28 +112,8 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
         <!--  Mot tao 1 layout rieng -->
-        <!--  BEGIN PRODUCT-->
-        <div class="content">
-            <div class="grid wide">
-                <div class="content__container row">
-                    @RenderBody();
-                </div>
-            </div>
-        </div>
 
-
-
-
-
-
-        <!-- END PRODUCT-->
         <div class="form-vadition--modal">
             <div class="form-vadition--overplay"></div>
             <div class="form-vadition__container--login">
@@ -145,7 +125,7 @@
                 </div>
                 <hr />
                 @*END HEADER
-                BEGIN BOX*@
+            BEGIN BOX*@
                 <div class="vadition__box pd24">
                     <h1 style="margin-bottom: 20px;" class="vadition__box-tittle">
                         Welcome to Airbnb
@@ -197,7 +177,7 @@
                 </div>
                 <hr />
                 @*END HEADER
-                BEGIN BOX*@
+            BEGIN BOX*@
                 <div class="vadition__box pd24">
                     <h1 style="margin-bottom: 20px;" class="vadition__box-tittle">
                         Welcome to Airbnb
@@ -244,10 +224,10 @@
                 END BOx
             </div>
         </div>
-        <!-- co the Phong du 1 div -->
+        @RenderBody(); <!-- co the Phong du 1 div -->
     </div>
-    @*<div class="ovl"></div>
-    <div class="loader"></div>*@
+    <div class="ovl"></div>
+    <div class="loader"></div>
     <script src="~/Scripts/scripts/Modal_user.js"></script>
 </body>
 </html>
