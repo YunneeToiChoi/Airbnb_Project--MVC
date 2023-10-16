@@ -1,0 +1,38 @@
+﻿@*@model Airbnb_Clone_Project.Models.Product*@
+@model IEnumerable<Airbnb_Clone_Project.Models.Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/Assets/CSS/Product_css/Product.css" rel="stylesheet" />
+@foreach (var pro in Model)
+{
+    <div class="content__box col l-3 m-4 c-6">
+        <div class="content-img__box">
+            <div class="content__wishlist">
+                <a href="#" class="content__link"><i class="content-wishlist__icon fa-regular fa-heart"></i></a>
+            </div>
+            <div class="content__page">
+                <p class="content__transition">.<span class="content__transition--no-chosen">....</span></p>
+            </div>
+            <div class="content__arrow">
+                <i class="content-arrow__icon fa-solid fa-angle-right"></i>
+            </div>
+            <a href="#" class="content__link">
+                <img src="~/Assets/_image/products_image/CRS__PINGAO.png" style="width : 100%; height : 100%" alt="" class="content__img">
+                @*<img src="@Url.Content(pro.ImagePro)" height="150" width="150" alt="Alternate Text" />*@
+            </a>
+        </div>
+        <div class="content__infomation">
+            <div class="content__header">
+                <p>@Html.DisplayFor(model => pro.NamePro)</p>
+                <p class="content__rate"><i class="content__icon fa-solid fa-star"></i>4,88</p>
+            </div>
+            <p class="content__owner">Chủ nhà: Carmela</p>
+            <p class="content__date">Ngày 06 - Ngày 11 tháng 11</p>
+            <p class="content__price">@Html.DisplayFor(model => pro.Price) $ / <span class="content__day">đêm</span></p>
+        </div>
+    </div>
+}
+
+
